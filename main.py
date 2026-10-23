@@ -6,8 +6,10 @@ import re
 import time
 
 # Telegram 設定
-TG_BOT_TOKEN = os.getenv("8893335763:AAGxjx_93IKZ1doDn-qcKcsj6tb1Qv8IZmU")
-TG_CHANNEL_ID = os.getenv("-1003973143606")
+# ✅ 正確的寫法
+TG_BOT_TOKEN = os.getenv("TG_BOT_TOKEN")
+TG_CHANNEL_ID = os.getenv("TG_CHANNEL_ID")
+
 
 # 資安 RSS 源
 RSS_FEEDS = [
