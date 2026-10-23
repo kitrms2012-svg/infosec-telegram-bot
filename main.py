@@ -6,9 +6,19 @@ import re
 import time
 
 # Telegram 設定
-# ✅ 正確的寫法
 TG_BOT_TOKEN = os.getenv("TG_BOT_TOKEN")
 TG_CHANNEL_ID = os.getenv("TG_CHANNEL_ID")
+
+# 🔍🔍🔍 加入這三行除錯代碼 🔍🔍🔍
+print("=" * 50)
+print(f"🔍 TG_BOT_TOKEN 長度: {len(TG_BOT_TOKEN) if TG_BOT_TOKEN else 0}")
+print(f"🔍 TG_CHANNEL_ID: {TG_CHANNEL_ID}")
+print("=" * 50)
+
+if not TG_BOT_TOKEN:
+    print("❌ 錯誤：TG_BOT_TOKEN 為空！")
+if not TG_CHANNEL_ID:
+    print("❌ 錯誤：TG_CHANNEL_ID 為空！")
 
 
 # 資安 RSS 源
