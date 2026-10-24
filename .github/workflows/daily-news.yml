@@ -3,7 +3,7 @@ name: Daily InfoSec News
 on:
   schedule:
     # 每天 UTC 時間 00:00 運行（台灣時間早上 8:00）
-    - cron: '35 0 * * *'
+    - cron: '05 1 * * *'
   
   # 允許手動觸發（用於測試）
   workflow_dispatch:
